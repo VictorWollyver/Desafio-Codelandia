@@ -41,7 +41,7 @@ p {
     color: var(--title);
     text-align: justify;
     font-size: 1rem;
-    color: #b6b6b6;
+    color: #000000;
     font-family:'Inter', sans-serif;
 }
 
@@ -49,7 +49,7 @@ h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #313131;
+    color: #000000;
     font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -59,6 +59,16 @@ header {
     margin-bottom: 5rem;
     width: 100%;
     
+}
+
+button#darkmode {
+    padding: 1rem;
+    background-color: transparent;
+    outline-style: none;
+}
+
+img#img-darkmode {
+    height: 1.5rem;
 }
 
 
@@ -76,15 +86,15 @@ nav#options {
 
 
 input {
-    width: 60%;
+    width: 40%;
     height: 2.5rem;
     outline-style: none;
-    border-radius: 0.2rem;
+    border-radius: 0.2rem 0rem 0rem 0.2rem;
     background-color: #ffffff25;
     padding: 1rem 1rem 1rem 3rem;
     margin-top: 1rem;
     color: var(--white);
-    background-image: url(/assets/img/Vector.svg)  ;
+    background-image: url(/Desafio-Codelandia/assets/img/Vector.svg)  ;
     background-size: 1.2rem;
     background-position:0.9rem 0.7rem;
     background-repeat: no-repeat;
@@ -94,13 +104,25 @@ input {
 form {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+button#href-search{
+    width: 20%;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    outline-style: none;
+    background-color: #ffffff25 ;
+    color: white;
+    text-align: center;
+    padding: 0.6rem 0;
 }
 
 input::placeholder {
     color: var(--white);
     opacity: 0.7;
     font-family: 'Lexend Deca', sans-serif;
-
 }
 
 main {
@@ -109,8 +131,7 @@ main {
     justify-content: space-around;
     flex-direction: column;
     height: 60rem;
-    width: 100%;
-     
+    width: 100%; 
 }
 
 section {
@@ -119,7 +140,7 @@ section {
     background-color: #ffffff;
     height: auto;
     width: 60%;
-    box-shadow: 0.2rem 0.2rem 1rem gray;
+   border: 0.1rem solid black;
 }
 
 footer {
